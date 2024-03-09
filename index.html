@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 요청사항을 입력할 텍스트 박스 -->
+    <textarea id="promptInput" placeholder="여기에 입력하세요." rows="6" cols="50"></textarea>
+    <br>
+    <button id="generateButton">답변 제출</button>
+    <br>
+
+    <!-- 답변을 보여줄 div와 버튼을 눌렀는지 확인할 수 있는 상호작용 -->
+    <div id="loadingIndicator">
+        답변 생성중...
+        <span class="loading"></span>
+    </div>
+    <div id="output"></div>
+
+    <script src="gemini.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+/* 로딩 문구 처음에 숨기기 */
+#loadingIndicator {
+  display: none;
+  margin-top: 10px;
+  font-style: italic;
+  color: gray;
+}
+
+#output {
+  margin-top: 20px;
+}
+
+/* 로딩중 원 */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top-color: rgba(0, 0, 0, 0.7);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
